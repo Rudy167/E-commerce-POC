@@ -1,0 +1,84 @@
+.stripes{
+    width:auto;
+}
+.item{
+    flex : 1;
+
+}
+.about{
+    background-color: #69982e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:32px;
+
+   
+}
+.content{
+    height:150vh;
+    overflow: auto;
+}
+.white{
+   background-color: #ffffff;
+}
+.featured{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:20px;
+    margin-bottom: 3%;
+
+}
+.grey{
+    background-color:#f3f3f3;
+}
+.circle{
+    border-radius: 50%;
+}
+.mat-card{
+    background: transparent;
+   flex :1;
+   height:40%;
+   margin-right: 1%;
+}
+.card{
+    background: transparent;
+   flex : 1;
+  height : 100%;
+   margin: 1.5%;
+   height:200px;
+   transition: 0.35s;
+   justify-content: center;
+}
+.card:hover {
+   background-color:  grey;
+  }
+.square-card{
+    background: transparent;
+   flex : 1;
+  height : 100%;
+   margin: 1.5%;
+   height:400px;
+   transition: 0.35s;
+   justify-content: center; 
+}
+.square-card:hover{
+  border: 2px solid green;
+}
+
+  img{
+    max-width: 100%;
+    max-height: 85%;
+    display: block; /* remove extra space below image */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.center {
+  text-align: center;
+  }

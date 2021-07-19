@@ -1,0 +1,26 @@
+<div class="background">
+
+    <mat-card>
+        <h2>Create New Account</h2>
+        <p>Creating an account has many benefits: check out faster, keep more than one address, track orders and more.
+            Create your account by filling out the form below.</p>
+        <form fxLayout="column" fxLayoutAlign="center" [formGroup]="signupForm">
+            <app-mag-input-field formControlName="firstName" placeholder="first name"></app-mag-input-field>
+            <app-mag-input-field formControlName="lastName" placeholder="last name"></app-mag-input-field>
+         
+            <app-mag-input-field formControlName="email" placeholder="email"></app-mag-input-field>
+            <app-mag-input-field formControlName="password" placeholder="password"></app-mag-input-field>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="confirm password">
+            </mat-form-field>
+            <mat-checkbox>signup for news letter</mat-checkbox>
+
+
+            <button mat-raised-button [color]="'success'" (click)="onSubmit()">CREATE AN ACCOUNT</button>
+            <button mat-raised-button [color]="'default'"><i class="fa fa-arrow-left" aria-hidden="true"></i> CONTINUE
+                SHOPPING</button>
+
+        </form>
+    </mat-card>
+
+</div>

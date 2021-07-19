@@ -1,0 +1,112 @@
+<bread-crumb></bread-crumb>
+<span class="text-center">
+    <h1>Sports top</h1>
+</span>
+
+<mat-grid-list cols="4">
+    <mat-grid-tile [colspan]="1" [rowspan]="2">
+           
+        <mat-accordion multi="true" class="accordian">
+            <mat-expansion-panel>
+                <mat-expansion-panel-header [collapsedHeight]="'90px'" [expandedHeight]="'150px'">
+                    <mat-panel-title>
+                        <b>CATEGORY</b>
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox>Bottoms</mat-checkbox>
+                    <mat-checkbox>Tops</mat-checkbox>
+                    <mat-checkbox>Dresses</mat-checkbox>
+                    <mat-checkbox>Accessories</mat-checkbox>
+                    <mat-checkbox>Collections</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header [collapsedHeight]="'90px'" [expandedHeight]="'150px'">
+                    <mat-panel-title>
+                        <b>FASHION MATERIAL</b>
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+                <div fxLayout="column">
+                    <mat-checkbox>14K Gold</mat-checkbox>
+                    <mat-checkbox>Acrylic</mat-checkbox>
+                    <mat-checkbox>Cashmere</mat-checkbox>
+                    <mat-checkbox>Sterling Silver</mat-checkbox>
+                    <mat-checkbox>Cotton</mat-checkbox>
+                    <mat-checkbox>Linen</mat-checkbox>
+                    <mat-checkbox>Leather</mat-checkbox>
+                    <mat-checkbox>Nylon</mat-checkbox>
+                    <mat-checkbox>Organic Cotton</mat-checkbox>
+                    <mat-checkbox>Polyester</mat-checkbox>
+                    <mat-checkbox>Rayon</mat-checkbox>
+                    <mat-checkbox>Silk</mat-checkbox>
+                    <mat-checkbox>Spandex</mat-checkbox>
+                    <mat-checkbox>Viscose</mat-checkbox>
+                    <mat-checkbox>Wool</mat-checkbox>
+                </div>
+
+
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header [collapsedHeight]="'90px'" [expandedHeight]="'150px'">
+                    <mat-panel-title>
+                        <b>FASHION SIZE</b>
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+                <p>I'm visible because I am open</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header [collapsedHeight]="'90px'" [expandedHeight]="'150px'">
+                    <mat-panel-title>
+                        <b>PRICE</b>
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+                <p>I'm visible because I am open</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header [collapsedHeight]="'90px'" [expandedHeight]="'150px'">
+                    <mat-panel-title>
+                        <b>HAS VIDEO</b>
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+                <p>I'm visible because I am open</p>
+            </mat-expansion-panel>
+            <button mat-raised-button [color]="'success'">APPLY FILTERS</button>
+        </mat-accordion>
+
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="3">
+
+        <div fxFlex fxLayoutAlign="start start">
+            <mat-form-field class="padding">
+                <mat-label>12</mat-label>
+                <mat-select>
+                    <mat-option>
+                        food.viewValue
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="padding">
+                <mat-label>new</mat-label>
+                <mat-select>
+                    <mat-option>
+                        food.viewValue
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div fxFlex fxLayoutAlign="end start">
+            <i class="fa  fa-th  fa-2x icon"></i>
+            <i class="fa fa-bars fa-2x icon"></i>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+
+    </mat-grid-tile>
+</mat-grid-list>
